@@ -122,3 +122,5 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/.cargo/env"
 
 PATH=$PATH:$HOME/.local/bin/lvim
+eval "$(fzf --bash)"
+eval "$(zoxide init bash)"
