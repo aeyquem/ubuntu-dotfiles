@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sudo apt install yadm
+yadm clone https://github.com/aeyquem/ubuntu-dotfiles.git

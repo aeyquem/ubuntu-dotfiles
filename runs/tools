@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+#fzf
+sudo apt install fzf
+##setup terminals
+echo 'eval "$(fzf --bash)"' >> $HOME/.bashrc
+echo 'fzf --fish | source' >> $HOME/.config/fish/config.fish
+
+#zoxide
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+
+##setup terminals
+echo 'eval "$(zoxide init bash)"' >> $HOME/.bashrc
+echo 'zoxide init fish | source' >> $HOME/.config/fish/config.fish
+
+#exa
+cargo install exa
+
+#ripgrep
+sudo apt install ripgrep
+
+#bat
+sudo apt install bat
+echo 'alias bat="batcat"' >> $HOME./config/fish/config.fish
+

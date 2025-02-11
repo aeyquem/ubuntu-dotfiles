@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo "installing .net"
+
+sudo apt-get update && \
+sudo apt-get install -y dotnet-sdk-9.0
+
