@@ -47,6 +47,9 @@ floating_modifier $mod
 # screen config
 exec --no-startup-id xrandr --output DP-1-0 --mode 2560x1080 --rate 144.00
 exec --no-startup-id xrandr --output DP-1-0 --left-of eDP --output eDP --auto
+exec --no-startup-id xrandr --outupt eDP --scale 0.75
+
+exec --no-startup-id feh --bg-fill $HOME/Downloads/japan_torii_wallpaper.jpg
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -119,7 +122,7 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
+set $ws1 "1: Browser"
 set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
