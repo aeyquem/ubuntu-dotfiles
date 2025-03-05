@@ -1,0 +1,42 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "icon_theme": "Catppuccin Latte",
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+  "relative_line_numbers": true,
+  "base_keymap": "VSCode",
+  "theme": {
+    "mode": "system",
+    "light": "Rosé Pine Dawn",
+    "dark": "One Dark"
+  },
+  "active_pane_modifiers": {
+    "border_size": 3
+  },
+  "buffer_font_family": "FiraCode Nerd Font Mono",
+  "buffer_font_weight": 500,
+  "buffer_font_size": 16,
+  "tabs": {
+    "file_icons": true
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "ui_font_weight": 500,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_size": 16,
+  "terminal": {
+    "font_family": "Terminess Nerd Font",
+    "font_size": 18,
+    "font_weight": 600
+  }
+}
