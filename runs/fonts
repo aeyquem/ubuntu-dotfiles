@@ -1,0 +1,27 @@
+#!/bin/bash
+mkdir -p $HOME/.fonts
+
+# Define an array with the font names
+declare -a fonts=(
+  "FiraCode"
+  "Terminus"
+  "JetBrainsMono"
+)
+
+version=3.3.0
+
+# Loop through each font in the array
+for font_name in "${fonts[@]}"; do
+  # Download the font
+  echo "Downloading $font_name $version..."
+  curl -OL# "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/$font_name.zip"
+
+  # Unzip the font
+  echo "Unzipping $font_name..."
+  unzip -o "$font_name.zip" -d "$HOME/.fonts"
+
+  # Remove the zip file
+  rm "$font_name.zip"
+
+  echo "$font_name installed successfully!"
+done
